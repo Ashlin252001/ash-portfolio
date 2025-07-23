@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S Ashlin Jebisha | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background: url("images/tt.jpeg") no-repeat center center / cover;
+
+      background-attachment: fixed;
+      animation: moveBackground 30s linear infinite;
+      color: #f9fafa;
+    }
+
+    @keyframes moveBackground {
+      0% { background-position: center center; }
+      50% { background-position: center top; }
+      100% { background-position: center center; }
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("images/ttt.jpeg") no-repeat center center;
+      background-size: cover;
+      text-align: center;
+
+      padding: 120px 20px;
+      color: white;
+      animation: fadeIn 2s ease;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background-color: #222;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      animation: slideDown 0.8s ease;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00bcd4;
+    }
+
+    main {
+      padding: 60px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    section {
+      width: 100%;
+      margin-bottom: 80px;
+      animation: fadeInUp 1s ease;
+      text-align: center;
+    }
+
+    .flex-row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .box {
+      flex: 1;
+      min-width: 280px;
+      padding: 20px;
+      background: rgb(174, 104, 221);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, background 0.3s;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .box:hover {
+      transform: translateY(-5px);
+      background: #1d1e1f;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      text-align: left;
+    }
+    ul li {
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      width: 100%;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100%); }
+      to { transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="typing"></h1>
+    <p>Python Developer | QA Freelancer | Robotics Trainer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p style="margin-top: 20px; font-size: 20px;">
+        <strong> Hi, I’m a robotics trainer turned freelance tech professional. I have a strong background in Python, Robotics, and automation, and I now help clients with Python scripting, website testing, and quality assurance.
+           I enjoy solving real-world problems using smart tools and clear thinking. From building robots to testing websites, I focus on precision, clear communication, and on-time delivery. 
+             Whether it's automating tasks or ensuring your website runs smoothly, I’m here to make things easier, faster, and better.  </strong>
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="margin-top: 30px;" class="flex-row">
+        <div class="box">
+          <h3><i class="fas fa-cogs"></i> Hard Skills</h3><br>
+          <ul>
+            <li>Python (OpenCV, NumPy)</li>
+            <li>Embedded C (Microcontrollers)</li>
+            <li>Excel & Google Sheets</li>
+            <li>Data Cleaning & Charts</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3><i class="fas fa-user-check"></i> Soft Skills</h3><br>
+          <ul>
+            <li>Communication & Teaching</li>
+            <li>Problem Solving</li>
+            <li>Creativity</li>
+            <li>Time Management</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div style="margin-top: 30px;" class="flex-row">
+        <div class="box">
+          <h3>Helmet Detection</h3><br>
+          <p>Real-time helmet detection system using YOLOv8 and OpenCV to enhance traffic safety.</p>
+        </div>
+        <div class="box">
+          <h3>Ocean Cleaner Robot</h3><br>
+          <p>Solar-powered robot with GPS and sensors to collect floating ocean waste autonomously.</p>
+        </div>
+        <div class="box">
+          <h3>Excel Data Cleanup</h3><br>
+          <p>Structured raw sales data, removed duplicates, and created charts for better insights.</p>
+        </div>
+        <div class="box">
+        <h3>My Self Balancing Robot</h3><br>
+        <p>A robotic system designed to maintain balance autonomously using sensors and control algorithms.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Freelance Services</h2>
+      <div class="flex-row" style="margin-top: 30px;">
+        <div class="box">Python scripts for automation and robotics</div>
+        <div class="box">Manual & Automated Website Testing </div>
+        <div class="box">Data entry and Excel <br> cleanup tasks</div>
+        <div class="box">Virtual assistance <br>(email, research, scheduling)</div>
+        <div class="box">Documentation & content <br>  formatting</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2><br>
+      <p><strong>Email:</strong> <a href="mailto:ashlinjebisha@gmail.com">ashlinjebisha@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 S Ashlin Jebisha | All rights reserved</p>
+  </footer>
+
+  <script>
+    const text = "S Ashlin Jebisha";
+    const typingElement = document.getElementById("typing");
+    let index = 0;
+    function typeEffect() {
+      if (index < text.length) {
+        typingElement.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 100);
+      }
+    }
+    window.onload = typeEffect;
+  </script>
+</body>
+</html>
